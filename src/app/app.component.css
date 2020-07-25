@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    height: 100vh;
+}
+.side-menu{
+    width: 30vw;
+    height: 100vh;
+    overflow: scroll;
+    padding-top: 50px;
+    background-color: aliceblue;
+}
+.content{
+    width: 70vw;
+    overflow: auto;
+}

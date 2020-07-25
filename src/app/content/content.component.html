@@ -1,0 +1,176 @@
+<div class="container-fluid">
+    <section id="home" class="section">
+        <div class="container-fluid" >
+            <div class="content-menu">
+                <a href="#home" >Home</a>
+            </div>
+            <div id="sec-1-div-1">
+                <h1>Hi ! I am <br> Bhargav</h1>
+                <p id="summary">I am interested in Backend development and manages
+                    to build Frontend like this webpage.<br> Also, I can help you with
+                    technical documentaion. I write at <a href="#">CodeDopes</a>
+                    about programming mostly on Data Structures and Algorithms.</p>
+            </div>
+            <span id="cv">
+               <a href="#" class="btn btn-outline-primary" >DOWNLOAD CV</a>
+            </span>
+        </div>    
+    </section>
+    <section id="skills" class="section">
+        <div class="content-menu">
+            <a href="#home" >My Skills</a>
+        </div>
+        <div class="row skill-table">
+            <div class="col-md-8 skill">
+                <p>Bhargav believes that the only thing that remains constant in this world
+                    is change. So he keeps upgrading his existing and 
+                    always open to learn and unlearn new things on the way. </p>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Core Java</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <span>80%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Python</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color: darkslateblue;">
+                        <span>70%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Algorithms</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color: lightseagreen;">
+                        <span>90%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Data Structures</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:90%;width:90%;background-color: lightseagreen;">
+                        <span>90%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Nodejs</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:50%;background-color: lightskyblue;">
+                        <span>50%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Angular</h5>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:40%;background-color: darkmagenta;">
+                        <span>40%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-wrap">
+                    <h5>Content Writing</h5>
+                    <div class="progress">
+                         <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100" style="width:60%;background-color: darkorange;">
+                        <span>60%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="section">
+        <div class="content-menu">
+            <a href="#experience" >Work Experience</a>
+            <div class="timeline">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container container-work right-work"
+                                style="border-color: cornflowerblue">
+                            <div class="content-work ">
+                                <h3>Software Engineer Intern at Crest Data Systems</h3>
+                                <span>Jan 2020 - June 2020</span>
+                                <p class="desc">Smoothly accommodated the CIM mapping of 
+                                    new data type in existing Add-on in Splunk for Box Shield.<br>
+                                    Responsible for unit testing the existing Add-on in Splunk for ThreatQuotient Inc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="content-menu">
+            <a href="#education" >EDUCATION</a>
+        </div>
+        <div class="row common-row-sec">
+            <div class="col-md-12">
+                <div class="container-fluid" *ngFor="let edu_data of educationData; let i = index">
+                    <div class="container-fluid degree-head degree-common dropdown" 
+                    (click)="educationData[i].show = !educationData[i].show"
+                    [attr.aria-expanded]="edu_data.show"
+                    aria-controls="deg-details-{{i}}">
+                        <h3>{{ edu_data.degree_name }}
+                        </h3>    
+                    </div>
+                    <div class="container-fluid degree-desc degree-common"
+                        id="deg-details-{{i}}" [ngbCollapse]="!edu_data.show">
+                        <h5>{{ edu_data.institue_name }}
+                        <span class="deg-right">{{ edu_data.year }}</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="projects" class="section">
+        <div class="content-menu">
+            <a href="#projects" >PROJECTS</a>
+        </div>
+        <div class="row common-row-sec row-project">
+            <div class="col-md-6" *ngFor="let project of projectsData">
+                <div class="container project-div" >
+                    <div class="image-div"
+                    style="background-image: url({{project.image_path}});" 
+                    >
+                    <h5>{{ project.project_name }}</h5><hr>
+                    <div class="btn btn-outline-primary project-live-link">
+                        <a href="#" class="live">Live</a>
+                     </div>
+                     <div class="btn btn-outline-primary project-git-link">
+                        <a href="#" class="live">Github</a>
+                     </div>
+                 </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>  
+</div>

@@ -1,0 +1,38 @@
+.author-menu{
+    text-align: center;
+}
+.author-image{
+    margin: auto;
+    width: 150px;
+    
+    margin-bottom: 5%;
+}
+.author-navbar{
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+.navbar{
+    display: inline-block;
+}
+.author-name{
+    font-family: Georgia, serif;
+    font-style: bold;
+}
+a{
+    text-decoration: none;
+}
+
+#author-name-a{
+    color: black;
+}
+a.nav-link{
+    text-transform: uppercase;
+    color: dimgrey;
+}
+#author-d{
+    color: cornflowerblue;
+}
+.foot-notes{
+    margin-top: 10%;
+}
