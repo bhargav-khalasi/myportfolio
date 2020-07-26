@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d my-portfolio"
+    "deploy": "gh-pages -d ../myportfolio"
   },
   "private": true,
-  "homepage":"https://develper.github.io/myportfolio",
+  "homepage": "https://develper.github.io/myportfolio",
   "dependencies": {
     "@angular/animations": "~10.0.4",
     "@angular/common": "~10.0.4",
