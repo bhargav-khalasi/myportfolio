@@ -3,7 +3,7 @@ section{
 }
 section:nth-child(1)
 {
-    background-image: url("/../assets/images/img_bg_1.jpg");
+    background-image: url("/assets/images/img_bg_1.jpg");
 }
 section:nth-child(2)
 {
