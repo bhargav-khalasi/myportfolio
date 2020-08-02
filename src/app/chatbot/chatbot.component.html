@@ -1,0 +1,22 @@
+<div class="container chat" *ngIf="showChat">
+    <div class="container head-chat" (click)="onClickCaret()">
+        <p class="p-chat" >Hey! Bhargav here <fa-icon *ngIf="caretToggle" [icon]="faCaretDown" class="caret"></fa-icon>
+            <fa-icon *ngIf="!caretToggle" [icon]="faCaretUp" class="caret"></fa-icon>
+        </p>
+        
+    </div>
+    <div class="container chat-window" *ngIf="caretToggle">
+        <p>Are you a Recruiter?</p>
+        <button class="btn btn-outline-primary query" 
+        [disabled]="clicked" (click)="onClick('yes')">Yes</button>
+        <button class="btn btn-outline-primary query" 
+        [disabled]="clicked" (click)="onClick('no')">No</button>
+        <p *ngIf="onYes"> Great! Bhargav is loooking for a job opportunity.<br>
+            If you have open position. Please Contact him at, <br>
+            <a href="mailto:bhargavk209@gmail.com">bhargavk209@gmail.com</a><br>
+            Thank You !
+        </p>
+        <p *ngIf="onNo">Good! Bhargav would be happy to connect on LinkedIn here<br>
+        <a href="https://www.linkedin.com/in/bhargav-khalasi-78b63017a/">Bhargav's LinkedIn</a><br></p>
+    </div>
+</div>
