@@ -1,0 +1,29 @@
+.chat-window{
+    flex-grow: 1;
+    background-color: azure;
+}
+.head-chat{
+    text-align: center;
+
+    background-color: lightskyblue;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 380px;
+    width: 300px;
+    bottom: 0px;
+    right: 10px;
+    border-radius: 10px;
+}
+.query{
+    margin-top: 4px;
+    width: 100%;
+}
+.caret{
+    float: right;
+}
+.p-chat{
+    padding: 5px;
+}
